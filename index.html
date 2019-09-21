@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipes Finder with Wine Pairing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <section id = "search">
+            <h1>Find Recipes Videos and Pair it with the Perfect Wine</h1>
+
+            <form id="js-form">
+                <label for="food">Enter food keyword</label>
+                <input type="text" name="query" id="js-search-food">
+                <br>
+                <label for="number">Number of results to return (between 1 - 100)</label>
+                <input type="number" name="number" id="js-number" value = "10">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <p id="js-error-message" class="error-message"></p>
+        </section>
+
+        <section id="recipes-results" class="hidden">
+          <h2>Recipes Results</h2>
+          <br>
+          <div id="recipes-img-list">
+          </div>
+        </section>
+
+        <section id="wines-results" class="hidden">
+            <h2>Wines Results</h2>
+            <br>
+            <div id="wines-pairs">
+            </div>
+            <div id="wines-display">
+            </div>
+          </section>
+    </div>
+    <script src="recipeSearch.js"></script> 
+    <script src="winePairing.js"></script>
+</body>
+</html>

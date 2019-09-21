@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+input {
+    margin: 5px 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    justify-items: stretch;
+    align-items: center;
+}
+
+section {
+    border: 5px solid gray;
+}
+
+#search {
+    grid-column: 1 / 4;
+}
+
+#recipes-results{
+    grid-column: 1 / 4;
+
+}
+
+#wines-results {
+    grid-column: 1 / 4;
+    grid-row: 4 / 4; 
+
+}
